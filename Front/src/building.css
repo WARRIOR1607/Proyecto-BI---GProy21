@@ -1,0 +1,69 @@
+/* Estilos para el contenedor principal */
+.init-loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ajusta según sea necesario */
+}
+
+
+/* Estilos para el contenido generado por el archivo CSS */
+.edificio {
+  width: 300px;
+  height: 400px;
+  background-color: beige; /* Establece el color de fondo como beige */
+  animation: building 2s cubic-bezier(0.11, 0, 0.5, 0) 0s 1 normal forwards;
+}
+
+.cuadrado-pequeno {
+  position: absolute;
+}
+
+@keyframes building {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(-48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(-26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(-13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(-6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
